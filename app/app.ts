@@ -149,7 +149,13 @@ function p2p_initErrorHandler(ws) {
     ws.on('error', () => closeConnection(ws));
 }
 
-function p2p_connectToPeers(newPeers) {
+/**
+ * New peers in format:
+ *  ws://host.com:port
+ *
+ * @param {String[]} newPeers
+ */
+function p2p_connectToPeers(newPeers: string[]) {
     newPeers.forEach((peer) => {
         let ws = new WebSocket(peer);
         ws.on('open', () => p2p_initConnection(ws));
