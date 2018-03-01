@@ -19,6 +19,7 @@
   },
   "scripts": {
     "start": "node build/app.js",
+    "start:client": "node build/client.js @$",
     "start:node:1": "node build/app.js --port=15000 --p2pport=16000",
     "start:node:2": "node build/app.js --port=15001 --p2pport=16001 --peers=ws://localhost:16000",
     "start:node:3": "node build/app.js --port=15002 --p2pport=16002 --peers=ws://localhost:16000,ws://localhost:16001",
