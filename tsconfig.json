@@ -1,0 +1,26 @@
+{
+  "version": "2.6.2",
+  "compilerOptions": {
+    "allowJs": true,
+    "strictNullChecks": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES2015",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "build"
+  },
+  "exclude": [
+    "node_modules",
+    "definitions"
+  ],
+  "include": [
+    "app/**/*",
+    "tests/**/*"
+  ],
+  "files": [
+    "app/app.ts"
+  ],
+  "compileOnSave": true
+}
